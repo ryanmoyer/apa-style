@@ -28,7 +28,15 @@ The following code is another Test-Driven Development exercise for `Mott Fisk`_ 
 .. _Ryan Moyer: https://github.com/ryanmoyer
 .. _Forking a Repo: https://help.github.com/articles/fork-a-repo
 .. _pull request: https://help.github.com/articles/using-pull-requests
-  
+
+=======
+ Notes
+=======
+
+The tests cases for this program don't technically follow strict APA
+style. You shouldn't need to consult an APA manual to make it
+work. Just look at the tests and make them pass.
+
 =======
  Hints
 =======
@@ -37,9 +45,11 @@ The following code is another Test-Driven Development exercise for `Mott Fisk`_ 
   code. You may want to use the keyword argument form instead of the
   positional argument form. Ask me about it or attempt to figure it
   out on your own.
+* You'll want to use `str.split()`_ to correctly handle the full names.
 * Look in the tutorial sections `Errors and Exceptions`_ if you'd like
   to learn how they work, specifically `Raising Exceptions`_.
 
 .. _str.format(): http://docs.python.org/2/library/stdtypes.html?highlight=format#str.format
+.. _str.split(): http://docs.python.org/2/library/stdtypes.html?highlight=split#str.split
 .. _Errors and Exceptions: http://docs.python.org/2/tutorial/errors.html
 .. _Raising Exceptions: http://docs.python.org/2/tutorial/errors.html#raising-exceptions
