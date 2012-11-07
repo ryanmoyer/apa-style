@@ -1,4 +1,14 @@
-The following code is another Test-Driven Development exercise for `Mott Fisk`_ and `Ryan Moyer`_.
+The following code is another Test-Driven Development exercise for
+`Mott Fisk`_ and `Ryan Moyer`_.
+
+The purpose of the program is to format a reference for a reference
+list according to the `APA citation style`_ given the necessary
+informtation about it. `Son of Citation Machine`_ is an example of a web application which does this.
+
+.. _Mott Fisk: https://github.com/mottfisk
+.. _Ryan Moyer: https://github.com/ryanmoyer
+.. _APA citation style: http://www.library.cornell.edu/resrch/citmanage/apa
+.. _Son of Citation Machine: http://citationmachine.net/index2.php
 
 =========
  Purpose
@@ -24,8 +34,6 @@ The following code is another Test-Driven Development exercise for `Mott Fisk`_ 
 * Sync the code to your repository.
 * Submit a `pull request`_ to my original repository. I will help you on this.
 
-.. _Mott Fisk: https://github.com/mottfisk
-.. _Ryan Moyer: https://github.com/ryanmoyer
 .. _Forking a Repo: https://help.github.com/articles/fork-a-repo
 .. _pull request: https://help.github.com/articles/using-pull-requests
 
