@@ -25,17 +25,19 @@ class TestApa(unittest.TestCase):
             'Englewood Cliffs, NJ: Prentice Hall.')
 
     def test_handles_only_first_name(self):
-        with self.assertRaises(ValueError):
+        with self.assertRaises(ValueError) as context_manager:
             format_apa_style(
                 'Sean', 2012, 'Teaching Python to Ryan', 'Jenison',
                 'MI', 'Kreiner Koders')
+        self.assertEqual(str(context_manager.exception), 'Invalid name')
 
     def test_handles_too_many_names(self):
-        with self.assertRaises(ValueError):
+        with self.assertRaises(ValueError) as context_manager:
             format_apa_style(
                 'Sean Richard Fisk', 2012,
                 'Teaching Python to Ryan', 'Jenison',
                 'MI', 'Kreiner Koders')
+        self.assertEqual(str(context_manager.exception), 'Invalid name')
 
     def test_handles_missing_data(self):
         citation = format_apa_style(
