@@ -29,7 +29,7 @@ class TestApa(unittest.TestCase):
             format_apa_style(
                 'Sean', 2012, 'Teaching Python to Ryan', 'Jenison',
                 'MI', 'Kreiner Koders')
-        self.assertEqual(str(context_manager.exception), 'Invalid name')
+        self.assertEqual(str(context_manager.exception), 'Too few names')
 
     def test_handles_too_many_names(self):
         with self.assertRaises(ValueError) as context_manager:
@@ -37,7 +37,7 @@ class TestApa(unittest.TestCase):
                 'Sean Richard Fisk', 2012,
                 'Teaching Python to Ryan', 'Jenison',
                 'MI', 'Kreiner Koders')
-        self.assertEqual(str(context_manager.exception), 'Invalid name')
+        self.assertEqual(str(context_manager.exception), 'Too many names')
 
     def test_handles_missing_data(self):
         citation = format_apa_style(

@@ -18,8 +18,10 @@ def format_apa_style(full_name, year, title, city, state, publisher):
     """
     split_name = full_name.split()
 
-    if len(split_name) != 2:
-        raise ValueError('Invalid name')
+    if len(split_name) < 2:
+        raise ValueError('Too few names')
+    if len(split_name) > 2:
+        raise ValueError('Too many names')
 
     first_initial = split_name[0][0]
     last_name = split_name[1]
