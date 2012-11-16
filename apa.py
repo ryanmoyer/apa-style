@@ -16,4 +16,9 @@ def format_apa_style(full_name, year, title, city, state, publisher):
     :return: the formatted citation
     :rtype: :class:`str`
     """
-    return ''
+    split_name = full_name.split()
+    first_initial = split_name[0][0]
+    last_name = split_name[1]
+    return '{0}, {1}. ({2}). {3}. {4}, {5}: {6}.'.format(last_name, first_initial,
+                                                         year, title,city,
+                                                         state, publisher)
